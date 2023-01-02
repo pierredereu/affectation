@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hud.MyController">
+   <children>
+      <VBox alignment="CENTER" layoutX="249.0" layoutY="94.0" prefHeight="375.0" prefWidth="598.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Bienvenue dans votre espace de gestion du tutorat.">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#switchToCreerAffectation" prefHeight="54.0" prefWidth="231.0" text="Nouvelle affectation" />
+            <Button mnemonicParsing="false" onAction="#switchToAfficherAffectation" prefHeight="54.0" prefWidth="231.0" text="Afficher l'affectation précédente" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
